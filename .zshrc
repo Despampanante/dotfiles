@@ -30,7 +30,8 @@ then
 fi
 
 alias vim="nvim"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+#alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME'
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
@@ -38,4 +39,5 @@ export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
 # FZF ignore gitignore files with ripgrep
 export FZF_DEFAULT_COMMAND='rg --files'
 
-
+# Rebinding capslock
+setxkbmap -option ctrl:nocaps
