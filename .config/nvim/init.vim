@@ -54,3 +54,18 @@ call minpac#init()
 call minpac#add('morhetz/gruvbox')
 call minpac#add('tpope/vim-surround')
 call minpac#add('junegunn/fzf')
+
+" Vimtex settings
+call minpac#add('lervag/vimtex')
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+" Ultisnips
+call minpac#add('sirver/ultisnips')
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
